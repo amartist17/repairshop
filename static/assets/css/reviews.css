@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+.container2 {
+  background: #f8faff;
+  color: #4b537c;
+  width: 100%;
+  font-family: Muli, sans-serif;
+  max-width: 450px;
+  padding: 40px;
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 50px;
+  box-shadow: #f4f4f4 0 10px 20px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.heading {
+  font-size: 18px;
+}
+
+.para {
+  font-weight: 600;
+}
+
+.feedback-level {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.level {
+  background: white;
+  padding: 13px;
+  border-radius: 7px;
+  border: solid 0.5px #f4f4f4;
+  cursor: pointer;
+}
+.level:hover {
+  box-shadow: #266cfb 0 2px 5px;
+}
+.level:hover i {
+  color: #266cfb;
+}
+.level i {
+  font-size: 40px;
+}
+.feedback-msg input {
+  background: white;
+
+  margin-top: 5px;
+  margin-bottom: 12px;
+  border: solid 2px #e0e9fe;
+  padding: 13px;
+  border-radius: 7px;
+  outline: none;
+  font-size: 14px;
+  color: #4b537c;
+  font-weight: 500;
+  letter-spacing: 1px;
+  width: 100%;
+  height: 40px;
+  resize: none;
+}
+
+.feedback-msg textarea {
+  margin-top: 5px;
+  border: solid 2px #e0e9fe;
+  padding: 13px;
+  border-radius: 7px;
+  outline: none;
+  font-size: 14px;
+  color: #4b537c;
+  font-weight: 500;
+  letter-spacing: 1px;
+  width: 100%;
+  height: 80px;
+  resize: none;
+}
+
+.agreement .checkbox {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.agreement input {
+  accent-color: #266cfb;
+}
+.agreement a {
+  color: #266cfb;
+  font-size: 12px;
+  font-weight: 600;
+}
+.agreement label {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+}
+.buttons button {
+  background: white;
+  color: #4b537c;
+  width: 80px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 4px;
+}
+.buttons button:hover {
+  opacity: 0.9;
+}
+.buttons button:nth-child(1) {
+  background: #266cfb;
+  color: #f8faff;
+}
