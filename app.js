@@ -5,6 +5,7 @@ const path = require("path");
 const _ = require("lodash");
 
 const Reviews = require("./models/reviews");
+const Emails = require("./models/emails");
 
 const app = express();
 
@@ -34,11 +35,18 @@ app.post("/add-review", async (req, res) => {
   let review = await Reviews.create(req.body);
   res.redirect("/");
 });
+
+app.post("/subscribe", async (req, res) => {
+  console.log(req.body);
+  let newEmail = await Emails.create({ email: req.body.email });
+  res.redirect("/");
+});
+
 app.get("/services", async (req, res) => {
   res.render("services");
 });
 app.get("/shop/:type", async (req, res) => {
-  res.render("shop");
+  res.render("shop-" + req.params.type);
 });
 
 module.exports = app;
